@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title> 
+    <link rel="stylesheet" href="sign_up.css">
+</head>
+<body>
+    <form action="">
+        <fieldset class="INFORMATIONS">
+            <legend>USER INFORMATIONS:</legend>
+
+            <img src="./user.png" alt="" height="50" width="50"> <br> <br>
+                <b>first name:</b> <br>
+                <input type="text" name="F_name" id=""> <br>
+                <b>middle name:</b> <br>
+                <input type="text" name="M_name" id=""> <br>
+                <b>last name:</b> <br>
+                <input type="text" name="L_name" id=""> <br>
+                <b>Contact:</b> <br>
+                <input type="tel" name="phone" id="" placeholder="+225...." required> <br>
+                <b>Email:</b> <br>
+                <input type="email" name="Email" id=""> <br>
+                <b>gender:</b> <br>
+                <select name="gender" id="">
+                    <option value="">.......</option>
+                    <option value="gender">male</option>
+                    <option value="gender">female</option>
+                    <option value="gender">Others</option>
+                </select>
+        </fieldset> <br><br>
+        <fieldset class="ADDRESS">
+            <legend>USER ADDRESS:</legend>
+
+            <script>
+                // Sample data for regions, districts, and wards
+                var tanzaniaData = {
+                    "Dar es Salaam": {
+                        "Ilala": ["Buguruni", "Gongo la Mboto"],
+                        "Kinondoni": ["Kijitonyama", "Mwenge"]
+                    },
+                    "Arusha": {
+                        "Arusha City": ["Baraa", "Kisongo","sorenyi","Kwa mrefu"],
+                        "Arusha Rural": ["Monduli", "Longido","loliondo","Terat"]
+                    }
+                    // Add more regions, districts, and wards as needed
+                };
+            
+                // Function to populate districts based on selected region
+                function populateDistricts() {
+                    var regionSelect = document.getElementById("region");
+                    var districtSelect = document.getElementById("district");
+                    var wardSelect = document.getElementById("ward");
+            
+                    var selectedRegion = regionSelect.value;
+                    districtSelect.innerHTML = "<option value=''>Select District</option>";
+                    wardSelect.innerHTML = "<option value=''>Select Ward</option>";
+            
+                    if (selectedRegion !== "") {
+                        var districts = tanzaniaData[selectedRegion];
+                        for (var district in districts) {
+                            var option = document.createElement("option");
+                            option.text = district;
+                            districtSelect.add(option);
+                        }
+                    }
+                }
+            
+                // Function to populate wards based on selected district
+                function populateWards() {
+                    var regionSelect = document.getElementById("region");
+                    var districtSelect = document.getElementById("district");
+                    var wardSelect = document.getElementById("ward");
+            
+                    var selectedRegion = regionSelect.value;
+                    var selectedDistrict = districtSelect.value;
+            
+                    wardSelect.innerHTML = "<option value=''>Select Ward</option>";
+            
+                    if (selectedRegion !== "" && selectedDistrict !== "") {
+                        var wards = tanzaniaData[selectedRegion][selectedDistrict];
+                        for (var i = 0; i < wards.length; i++) {
+                            var option = document.createElement("option");
+                            option.text = wards[i];
+                            wardSelect.add(option);
+                        }
+                    }
+                }
+            </script>
+            </head>
+            <body>
+                <h2>Select Tanzanian Region, District, and Ward</h2>
+                <form>
+                    <label for="region">Region:</label>
+                    <select id="region" onchange="populateDistricts()">
+                        <option value="">------------</option>
+                        <option value="Dar es Salaam">Dar es Salaam</option>
+                        <option value="Arusha">Arusha</option>
+                        <!-- Add more regions here -->
+                    </select><br><br>
+            
+                    <label for="district">District:</label>
+                    <select id="district" onchange="populateWards()">
+                        <option value="">------------</option>
+                        <!-- Districts will be populated dynamically based on the selected region -->
+                    </select><br><br>
+            
+                    <label for="ward">Ward:</label>
+                    <select id="ward">
+                        <option value="">------------</option>
+                        <!-- Wards will be populated dynamically based on the selected district -->
+                    </select><br><br>
+            
+
+            <!-- <b>Nationality:</b> <br> 
+            <select name="" id="">
+            
+                <option value="Nationality">......</option>
+                <option value="Nationality">Tanzanian</option>
+                <option value="Nationality">Kenya</option>
+                <option value="Nationality">Uganda</option>
+                <option value="Nationality">Zambia</option>
+                <option value="Nationality">Congo republican</option>
+                <option value="Nationality">Mozambic</option>
+            </select> <br>
+            <b>Region:</b> <br>
+            <select name="" id="">
+                <option value="Region">..</option>
+                <option value="Region">mbeya</option>
+                <option value="Region">arusha</option>
+                <option value="Region">mlangarini</option>
+                <option value="Region">malwaa</option>
+                <option value="Region">minimarke</option>
+            </select> -->
+        </fieldset> <br>
+
+        <fieldset class="ACCOUNT">
+            <legend>USER ACCOUNT</legend> <br>
+            <img src="./bank.png" alt="" height="50" width="50"> <br> <br>
+
+            <b>Accout name:</b> <br>
+                <select name="" id="">
+                    <option value="">.....</option>
+                    <option value="">NMB</option>
+                    <option value="">CRDB</option>
+                    <option value="">NBC</option>
+                    <option value="">TEMBO CARD</option>
+                    <option value="">ABC</option>
+                </select> <br>
+                <b>Accout number:</b> <br>
+                <input type="number" name="Accout_number" id="" required placeholder="action_number"> <br>
+                <b>name of Accout:</b> <br>
+                <input type="text" name="name_of_account" id="" placeholder="eg. SHEDRACK MOSSES"> <br>
+                <!-- <b>photo</b> <br> <br>
+                <input type="month" name="photo" id=""> -->
+        </fieldset> <br> <br>
+        <input type="reset" name="reset" id="R"> 
+        <input type="submit" name="submit" id="S">
+    </form>
+</body>
+</html>

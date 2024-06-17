@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio websites</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="SHEDRACK1.gif" class="icon" height="60px" width="200px">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="./sign_up.html">Sign_up</a></li>
+                    <li><a href="log_in.html">log_in</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <i class="fas fa-times" id="Q" onclick="closemenu()" ></i>
+                </ul>
+                <i  class="fas fa-bars" id="M" onclick="openmenu()" ></i>
+            </nav> <br>    
+            <div class="header-text">
+                <p>This is my portfolio websites</p>
+                <h1 class="header-text-h1">Hi my name is <span>SHEDRACK</span>  <br>A Data sience student at <span>MUST</span> </h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------------About-------------- -->
+      <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="./chedy.jpg" height="430px" width="500px" >
+                </div>
+                 <div class="About-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>My name is <b style="color: rgb(247, 189, 221);" >SHEDRACK MOSSES MOLLEL:</b>  <br>
+                        I'm a student at mbeya university of sience and technology ( <b><span style="color: rgb(64, 67, 245);" > MUST</span></b> ): <br>
+                        i take an carees in bachelor engeneering in DATA SIENCE 2 <sup style="color: rgb(97, 20, 220);" >dr</sup> year <br>
+                        I'm christan:
+                     </p> 
+
+                          <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Educations')">Educations</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('hobbies')">hobbies</p>
+                         </div>
+                         <div class="tab-content active-tab" id="Skills">
+                            <ol>
+                                <li style="font-size: 14px;"> <span >web</span><br> websites design</li>
+                                <li style="font-size: 14px;"> <span  >App</span> <br>app design</li>
+                                <li style="font-size: 14px;"> <span >Teacher</span><br> matht & physics</li>
+                                <li style="font-size: 14px;"> <span >programinng</span><br>
+                                <ol>
+                                    <li>1.C</li>
+                                    <li>2.C++</li>
+                                    <li>3.Java</li>
+                                    <li>4.python</li>
+                                    <li>5.HTML, CSS, JAVASCRIPT</li>
+                                </ol>
+                                 </li>
+                            </ol>
+                         </div>
+                         <div class="tab-content" id="Educations">
+                            <ol>
+                                <li style="font-size: 14px;"> <span >2023-current</span><br> Mbeya university</li>
+                                <li style="font-size: 14px;"> <span>2020-2022</span> <br>Ihungo high school</li>
+                                <li style="font-size: 14px;"> <span>2016-2019</span><br> Ekenywa secondary school</li>
+                                <li style="font-size: 14px;"> <span>2008-2015</span><br> primary school at mlangarini</li>
+                            </ol>
+                         </div>
+
+                         <div class="tab-content" id="Experience">
+                            <ol>
+                                <li style="font-size: 14px;"> <span>Computer</span> <br style="font-size: 14px;">Computer maintaince</li>
+                                <li style="font-size: 14px;"> <span>Software</span><br>Microsofty offeces</li>
+                                <li style="font-size: 14px;"> <span>Busness</span><br> All about microfinance</li>
+                                <li style="font-size: 14px;"> <span>programinng</span><br>
+                                    <ol>
+                                        <li>1.C</li>
+                                        <li>2.C++</li>
+                                        <li>3.python</li>
+                                        <li>4.HTML,CSS, JAVASCRIPT</li>
+
+                                    </ol>
+                            </li>
+                            </ol>
+                         </div> 
+                         <div class="tab-content" id="hobbies">
+                            <ol>
+                                <li style="font-size: 14px;"> <span>Football</span><br>Yanga</li>
+                                <li style="font-size: 14px;"> <span>Movie</span> <br>Black list</li>
+                                <li style="font-size: 14px;"> <span>Music</span><br>Western songs</li>
+                                <li style="font-size: 14px;"> <span>Dancing</span><br>Maasai dance</li>
+                            </ol>
+                         </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+     <!-- ------------services--------------- -->
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                 <div>
+                   
+                    <h1>web services:</h1>
+                    <i class="fas fa-code" style="color: cornflowerblue;"></i>
+                    <p>A web service function is a specific operation or method exposed <br>
+                     by a web service, enabling communication between different software <br>
+                      applications over a network. <br>
+                       These functions allow various applications to interact and exchange data, <br>
+                        regardless of the platform or programming language used. Web service functions can perform tasks such as <br>
+                         retrieving information from a database, processing data, or executing business logic.</p>
+                          <a href="#">Lern more</a>
+                 </div>
+               
+                 <div>
+
+                    <h1>Window installation:</h1>
+                    <i class="fab fa-windows" style="color: blue;"></i>
+                    <p>Window installation involves the process of fitting new windows into a building, <br>
+                         whether for new construction, replacement, or upgrade</p>
+                          <a href="#">Lern more</a>
+                 </div>
+                 <div>
+                   <h1>Data Analysis:</h1>
+                    <p>Data analysis involves inspecting, cleaning, transforming, <br>
+                         and modeling data to uncover useful information, draw conclusions, <br>
+                          and support decision-making. Here a concise overview of the key steps <br>
+                           in data analysis and the common software tools used. <span>
+                            Excel,python.SPSS,R,SQL,Power BI,SAS. etc
+                           </span>
+
+                        </p>
+                          <a href="#">Lern more</a>
+                 </div>
+                 <div>
+                    <h1>Machine Learning and Algorithim:</h1>
+                     <p>Machine learning is a subset of artificial intelligence that enables computers to learn <br>
+                        from and make decisions based on data without explicit programming. <br>
+                         algorithms that can identify patterns and make predictions or classifications from new data. <br>
+                           linear regression,  decision trees,  k-nearest neighbors (KNN):!</p>
+                           <a href="machine.html">Lern more</a>
+                  </div>
+                  <div>
+                    <h1>programinng Language:</h1>
+                     <p>Programming languages are tools that developers use to write <br>
+                         instructions for computers to perform specific tasks: Python
+                         JavaScript
+                         Java
+                         C++
+                         C#
+                         PHP
+                         Ruby
+                         Swift
+                         Go (Golang)
+                         TypeScript</p>
+                           <a href="#">Lern more</a>
+                  </div>
+                  <div>
+                    <h1>Mobile Aplication service:</h1>
+                     <p>A mobile application, commonly known as an app, is a software <br>
+                         program designed specifically to run on mobile devices like <br>
+                          smartphones and tablets. These applications provide a wide range <br>
+                           of functionalities, from communication and entertainment to <br>
+                            productivity and navigation. They are typically downloaded from app stores <br>
+                             such as the Apple App Store for iOS devices or Google Play for Android devices. <br>
+                              Mobile apps are tailored to leverage the unique features of mobile devices, <br>
+                               such as touchscreens, cameras, and GPS, to offer an enhanced user experience.</p>
+                           <a href="#">Lern more</a>
+                  </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- ---------portfolio-------------- -->
+
+     <div id="portfolio">
+        <div class="container">
+
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./side.jpg">
+                    <div class="layer">
+                        <h3>PASTORALISM $ AGRICULTURE:</h3>
+                        <P>Pastoralism focuses on livestock herding <br>
+                             agriculture involves cultivating crops and raising animals for various products, sustaining communities globally..</P>
+                             <a href="#">More</a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./side.jpg">
+                    <div class="layer">
+                        <h3>MAICROFINANCE:</h3>
+                        <P>Microfinance provides financial services to low-income individuals, entrepreneurship, alleviating poverty, and empowering marginalized communities through access to credit..</P>
+                             <a href="#">More</a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="./side.jpg">
+                    <div class="layer">
+                        <h3>HOME DESIGN:</h3>
+                        <P>Home design involves planning, arranging, and decorating living spaces creatively.</P>
+                             <a href="#">More</a>
+                    </div>
+
+                </div>
+
+                <div class="work">
+                    <img src="./side.jpg">
+                    <div class="layer">
+                        <h3>GRAFIC DESIGN:</h3>
+                        <P>Graphic design utilizes visual elements to communicate ideas, messages, and concepts effectively and aesthetically.</P>
+                             <a href="#">More</a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./side.jpg">
+                    <div class="layer">
+                        <h3>INTERPRENUESHIP:</h3>
+                        <P>Entrepreneurship involves creating, managing, and scaling ventures to pursue innovative solutions and business opportunities.</P>
+                             <a href="#">More</a>
+                    </div>
+
+                </div>
+                <div class="work">
+                    <img src="./side.jpg">
+                    <div class="layer">
+                        <h3>TEACHING METHODOLOGY:</h3>
+                        <P>Teaching methodology encompasses strategies, techniques, and approaches used to facilitate effective learning experiences in educational settings.</P>
+                             <a href="#">More</a>
+                    </div>
+
+                </div>
+
+            </div>
+             <a href="#" class="btn">See more</a>
+        </div>
+     </div>
+     <!-- ------------------contact----------------- -->
+
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1>comtact me</h1> <br> 
+                    <p> <i class="fas fa-paper-plane" ></i> chedy@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt" ></i> 0759122726</p>
+                    <div class="div-social-icon">
+                        <a href="mailto:shedrackmossesmollel@gmail.com"><i class="fab fa-facebook" ></i></a>
+                        <a href="#"><i class="fab fa-twitter-square" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" ></i></a>                   
+                        <a href="#"><i class="fab fa-linkedin" ></i></a>
+                        <!-- <i class='fas fa-user-friends'></i> -->
+                    </div>
+                    <a href="./CV.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-Right">
+                    <form action="conn.php" method="post" >
+                        <input  class="A" type="text" name="Name" id="" placeholder="Enter your name" required> <br>
+                        <input class="A" type="email" name="Email"  placeholder="Enter your Email" required> <br>
+                        <input class="A" type="number" name="Age" placeholder="Enter your number" id=""> <br>
+                        <textarea class="A" name="Message" placeholder="comment" required></textarea> <br>
+                        <button class="btn btn3" type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-content"); 
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontents of tabcontent){
+            tabcontents.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+</script> 
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+         
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+    
+</script>
+</body>
+</html>
